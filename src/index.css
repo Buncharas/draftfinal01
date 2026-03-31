@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #1557bb;
+  --color-primary-container: #719eff;
+  --color-secondary: #5a5974;
+  --color-tertiary: #535f4a;
+  --color-surface: #f6f6f6;
+  --color-line-green: #06C755;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-surface text-slate-900;
+  }
+}
+
+@layer components {
+  .pressable-3d {
+    @apply transition-all duration-100 active:translate-y-1 active:shadow-none;
+  }
+}
